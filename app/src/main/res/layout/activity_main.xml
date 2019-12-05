@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aluno.myapplication.MainActivity">
+
+    <EditText
+        android:id="@+id/editNome"
+        android:layout_width="289dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.12"
+        android:layout_marginRight="79dp"
+        android:layout_marginLeft="16dp" />
+
+    <Button
+        android:id="@+id/btnCadastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="51dp"
+        android:text="Cadastrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnFoto"
+        app:layout_constraintTop_toBottomOf="@+id/editPreco" />
+
+    <EditText
+        android:id="@+id/editQuantidade"
+        android:layout_width="290dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="449dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="42dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNome"
+        app:layout_constraintVertical_bias="0.023"
+        android:layout_marginRight="78dp"
+        android:layout_marginLeft="16dp" />
+
+    <EditText
+        android:id="@+id/editDTVal"
+        android:layout_width="293dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="330dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editQuantidade"
+        app:layout_constraintVertical_bias="0.044"
+        android:layout_marginRight="75dp"
+        android:layout_marginLeft="16dp" />
+
+    <EditText
+        android:id="@+id/editPreco"
+        android:layout_width="298dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="51dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/btnCadastrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editDTVal" />
+
+    <ImageButton
+        android:id="@+id/btnFoto"
+        android:layout_width="49dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="57dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnCadastrar"
+        app:layout_constraintStart_toEndOf="@+id/buttonListar"
+        app:layout_constraintTop_toBottomOf="@+id/editPreco"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <Button
+        android:id="@+id/buttonListar"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="54dp"
+        android:text="Listar produtos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnFoto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPreco"
+        app:layout_constraintVertical_bias="1.0"
+        android:layout_marginLeft="14dp" />
+
+    <TextView
+        android:id="@+id/textNome"
+        android:layout_width="253dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Nome:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        app:layout_constraintBottom_toTopOf="@+id/editNome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        android:layout_marginRight="115dp"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:id="@+id/textQuantidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="278dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="10dp"
+        android:text="Quantidade:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        app:layout_constraintBottom_toTopOf="@+id/editQuantidade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNome"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="238dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="20dp"
+        android:text="data de validade:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        app:layout_constraintBottom_toTopOf="@+id/editDTVal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editQuantidade"
+        android:layout_marginRight="238dp"
+        android:layout_marginLeft="17dp" />
+
+    <TextView
+        android:id="@+id/textPreco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:layout_marginEnd="320dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="13dp"
+        android:text="Preço:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        app:layout_constraintBottom_toTopOf="@+id/editPreco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editDTVal"
+        tools:ignore="MissingConstraints" />/>
+
+</android.support.constraint.ConstraintLayout>

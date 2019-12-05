@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="produtos_cadastrados">Produtos cadastrados:</string>
+    <string name="listar">listar</string>
+</resources>
